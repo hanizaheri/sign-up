@@ -6,7 +6,7 @@
  const jsConfetti = new JSConfetti();
 function myFunction(){
     document.getElementById("limiter").style.display = 'none';
-    document.getElementById('create').innerHTML = 'Your account has been created.';
+    document.getElementById('create').innerHTML = 'Created!';
     jsConfetti.addConfetti();
 }
 
