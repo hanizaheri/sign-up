@@ -268,7 +268,7 @@ iframe {
   color: #a64bf4;
 }
 
-.text_label{
+#text_label{
   font-family: Poppins-Regular;
   -webkit-text-size-adjust: 100%;
   margin-bottom: 30px;
@@ -425,4 +425,69 @@ iframe {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  /*border-style: solid;*/
+  border-color: #a64bf4;
+}
+.content p {
+  color: #333;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.content .requirement-list {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.requirement-list li {
+  font-size: 14px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.requirement-list li i {
+  width: 20px;
+  color: #aaa;
+  font-size: 0.6rem;
+}
+.requirement-list li.valid i {
+  font-size: 1.2rem;
+  color: #4285F4;
+}
+.requirement-list li span {
+  margin-left: 12px;
+  color: #333;
+}
+.requirement-list li.valid span {
+  color: #999;
+}
+
+@media screen and (max-width: 500px) {
+  body, .wrapper {
+    padding: 15px;
+  }
+  .wrapper .pass-field {
+    height: 55px;
+  }
+  .pass-field input, .content p  {
+    font-size: 1.15rem;
+  }
+  .pass-field i, .requirement-list li {
+    font-size: 1.1rem;
+  }
+  .requirement-list li span {
+    margin-left: 7px;
+  }
+}
+
+.pass-field i {
+  right: 14px;
+  top: 70%;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
 }
