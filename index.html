@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
@@ -28,19 +29,41 @@
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-23" data-validate="Password is required">
+					<div class="wrap-input100 m-b-23">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Type your password">
+						<div class="pass-field">
+							<input class="input100" type="password" name="pass" placeholder="Type your password">
+							<i class="fa-solid fa-eye"></i>
+						</div>
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
-
-					<div class="wrap-input100 validate-input code " data-validate="Re-typing password is required ">
-						<span class="label-input100">Re_enter password</span>
-						<input class="input100" type="password" name="code" placeholder="Re_type your password">
-						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					<div class="content m-b-23">
+						<p>Password must contains</p>
+						<ul class="requirement-list">
+						  <li>
+							<i class="fa-solid fa-circle"></i>
+							<span>At least 8 characters length</span>
+						  </li>
+						  <li>
+							<i class="fa-solid fa-circle"></i>
+							<span>At least 1 number (0...9)</span>
+						  </li>
+						  <li>
+							<i class="fa-solid fa-circle"></i>
+							<span>At least 1 lowercase letter (a...z)</span>
+						  </li>
+						  <li>
+							<i class="fa-solid fa-circle"></i>
+							<span>At least 1 special symbol (!...$)</span>
+						  </li>
+						  <li>
+							<i class="fa-solid fa-circle"></i>
+							<span>At least 1 uppercase letter (A...Z)</span>
+						  </li>
+						</ul>
 					</div>
 
-					<label class="text_label p-t-31"> </label>
+					<label id="text_label"></label>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
